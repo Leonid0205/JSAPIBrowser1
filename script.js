@@ -85,13 +85,10 @@ allParticipateBtns.forEach(button => {
 });
 
 allCancelBtns.forEach(button => {
-    if (user.some(item => item.field !== button.closest('.classElement').firstElementChild.textContent.split(" ")[1])) {
+    if (user.some(item => item.field === button.closest('.classElement').firstElementChild.textContent.split(" ")[1])){
         button.disabled = false;
-    } else {
-        button.disabled = true;
-    }
+    } else button.disabled = true;
 });
-
 
 classesEl.addEventListener('click', function (e) {
     const classEl = e.target.closest('.classElement');
