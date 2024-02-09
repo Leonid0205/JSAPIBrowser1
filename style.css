@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.classElement {
+    padding: 1rem;
+    display: grid;
+    gap: 0.4rem;
+    grid-template-columns: max-content;
+}
+
+button {
+    padding: 0.2rem;
+}
